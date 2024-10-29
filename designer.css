@@ -1,0 +1,29 @@
+/* Remove todos os espaços entre os elementos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Para garantir que o body e html ocupem toda a altura e largura */
+html, body {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Garantir que todos os elementos dentro do body fiquem colados uns aos outros */
+body > * {
+    display: block;
+    flex-shrink: 0;
+}
+
+/* Remover espaçamento extra de listas, parágrafos e outros elementos comuns */
+ul, ol {
+    list-style: none;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
